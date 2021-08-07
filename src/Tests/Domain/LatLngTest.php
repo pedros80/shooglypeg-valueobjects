@@ -20,6 +20,10 @@ final class LatLngTest extends TestCase
         $this->assertEquals('56.001, 3.0000001', (string) $location);
         $this->assertEquals('56.001', $location->lat());
         $this->assertEquals('3.0000001', $location->lng());
+        $this->assertEquals([
+            'lat' => '56.001',
+            'lng' => '3.0000001'
+        ], $location->toArray());
     }
 
     /**
