@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1628361612">
-  <project timestamp="1628361612">
+<coverage generated="1628362446">
+  <project timestamp="1628362446">
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/Currency.php">
       <class name="ShooglyPeg\Domain\Currency" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
@@ -212,7 +212,7 @@
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/TypedCollection.php">
       <class name="ShooglyPeg\Domain\TypedCollection" namespace="global">
-        <metrics complexity="11" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="24" coveredelements="22"/>
+        <metrics complexity="11" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="24" coveredelements="24"/>
       </class>
       <line num="29" type="method" name="__construct" visibility="public" complexity="3" crap="3" count="3"/>
       <line num="31" type="stmt" count="3"/>
@@ -236,10 +236,10 @@
       <line num="89" type="stmt" count="1"/>
       <line num="96" type="method" name="find" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="98" type="stmt" count="1"/>
-      <line num="105" type="method" name="reduce" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="107" type="stmt" count="0"/>
-      <metrics loc="109" ncloc="72" classes="1" methods="9" coveredmethods="8" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="14" elements="24" coveredelements="22"/>
+      <line num="105" type="method" name="reduce" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="107" type="stmt" count="1"/>
+      <metrics loc="109" ncloc="72" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="24" coveredelements="24"/>
     </file>
-    <metrics files="15" loc="690" ncloc="499" classes="14" methods="49" coveredmethods="48" conditionals="0" coveredconditionals="0" statements="100" coveredstatements="99" elements="149" coveredelements="147"/>
+    <metrics files="15" loc="690" ncloc="499" classes="14" methods="49" coveredmethods="49" conditionals="0" coveredconditionals="0" statements="100" coveredstatements="100" elements="149" coveredelements="149"/>
   </project>
 </coverage>
