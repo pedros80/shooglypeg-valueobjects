@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1628349549">
-  <project timestamp="1628349549">
+<coverage generated="1628350811">
+  <project timestamp="1628350811">
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/Currency.php">
       <class name="ShooglyPeg\Domain\Currency" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
@@ -71,12 +71,12 @@
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/Exceptions/InvalidPassword.php">
       <class name="ShooglyPeg\Domain\Exceptions\InvalidPassword" namespace="global">
-        <metrics complexity="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+        <metrics complexity="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
       </class>
-      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="13" type="stmt" count="0"/>
-      <line num="14" type="stmt" count="0"/>
-      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="0" elements="3" coveredelements="0"/>
+      <line num="11" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="13" type="stmt" count="5"/>
+      <line num="14" type="stmt" count="5"/>
+      <metrics loc="15" ncloc="15" classes="1" methods="1" coveredmethods="1" conditionals="0" coveredconditionals="0" statements="2" coveredstatements="2" elements="3" coveredelements="3"/>
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/Exceptions/InvalidTypeForCollection.php">
       <class name="ShooglyPeg\Domain\Exceptions\InvalidTypeForCollection" namespace="global">
@@ -146,50 +146,50 @@
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/Password.php">
       <class name="ShooglyPeg\Domain\Password" namespace="global">
-        <metrics complexity="15" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="0" elements="41" coveredelements="0"/>
+        <metrics complexity="15" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="32" elements="41" coveredelements="41"/>
       </class>
-      <line num="38" type="method" name="__construct" visibility="public" complexity="2" crap="6" count="0"/>
-      <line num="40" type="stmt" count="0"/>
-      <line num="42" type="stmt" count="0"/>
-      <line num="43" type="stmt" count="0"/>
-      <line num="44" type="stmt" count="0"/>
-      <line num="45" type="stmt" count="0"/>
-      <line num="47" type="stmt" count="0"/>
-      <line num="48" type="stmt" count="0"/>
-      <line num="51" type="stmt" count="0"/>
-      <line num="52" type="stmt" count="0"/>
-      <line num="57" type="method" name="plain" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="59" type="stmt" count="0"/>
-      <line num="65" type="method" name="hash" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="67" type="stmt" count="0"/>
-      <line num="73" type="method" name="__toString" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="75" type="stmt" count="0"/>
-      <line num="82" type="method" name="checkLength" visibility="private" complexity="2" crap="6" count="0"/>
-      <line num="84" type="stmt" count="0"/>
-      <line num="85" type="stmt" count="0"/>
-      <line num="87" type="stmt" count="0"/>
-      <line num="93" type="method" name="checkUpperCase" visibility="private" complexity="2" crap="6" count="0"/>
-      <line num="95" type="stmt" count="0"/>
-      <line num="96" type="stmt" count="0"/>
-      <line num="98" type="stmt" count="0"/>
-      <line num="104" type="method" name="checkLowerCase" visibility="private" complexity="2" crap="6" count="0"/>
-      <line num="106" type="stmt" count="0"/>
-      <line num="107" type="stmt" count="0"/>
-      <line num="109" type="stmt" count="0"/>
-      <line num="115" type="method" name="checkSpecialCase" visibility="private" complexity="2" crap="6" count="0"/>
-      <line num="117" type="stmt" count="0"/>
-      <line num="118" type="stmt" count="0"/>
-      <line num="120" type="stmt" count="0"/>
-      <line num="126" type="method" name="generate" visibility="public" complexity="2" crap="6" count="0"/>
-      <line num="129" type="stmt" count="0"/>
-      <line num="130" type="stmt" count="0"/>
-      <line num="131" type="stmt" count="0"/>
-      <line num="133" type="stmt" count="0"/>
-      <line num="135" type="stmt" count="0"/>
-      <line num="136" type="stmt" count="0"/>
-      <line num="139" type="stmt" count="0"/>
-      <line num="141" type="stmt" count="0"/>
-      <metrics loc="143" ncloc="104" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="0" elements="41" coveredelements="0"/>
+      <line num="38" type="method" name="__construct" visibility="public" complexity="2" crap="2" count="10"/>
+      <line num="40" type="stmt" count="10"/>
+      <line num="42" type="stmt" count="10"/>
+      <line num="43" type="stmt" count="10"/>
+      <line num="44" type="stmt" count="10"/>
+      <line num="45" type="stmt" count="10"/>
+      <line num="47" type="stmt" count="10"/>
+      <line num="48" type="stmt" count="5"/>
+      <line num="51" type="stmt" count="5"/>
+      <line num="52" type="stmt" count="5"/>
+      <line num="57" type="method" name="plain" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="59" type="stmt" count="1"/>
+      <line num="65" type="method" name="hash" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="67" type="stmt" count="2"/>
+      <line num="73" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="75" type="stmt" count="1"/>
+      <line num="82" type="method" name="checkLength" visibility="private" complexity="2" crap="2" count="10"/>
+      <line num="84" type="stmt" count="10"/>
+      <line num="85" type="stmt" count="1"/>
+      <line num="87" type="stmt" count="10"/>
+      <line num="93" type="method" name="checkUpperCase" visibility="private" complexity="2" crap="2" count="10"/>
+      <line num="95" type="stmt" count="10"/>
+      <line num="96" type="stmt" count="2"/>
+      <line num="98" type="stmt" count="10"/>
+      <line num="104" type="method" name="checkLowerCase" visibility="private" complexity="2" crap="2" count="10"/>
+      <line num="106" type="stmt" count="10"/>
+      <line num="107" type="stmt" count="2"/>
+      <line num="109" type="stmt" count="10"/>
+      <line num="115" type="method" name="checkSpecialCase" visibility="private" complexity="2" crap="2" count="10"/>
+      <line num="117" type="stmt" count="10"/>
+      <line num="118" type="stmt" count="1"/>
+      <line num="120" type="stmt" count="10"/>
+      <line num="126" type="method" name="generate" visibility="public" complexity="2" crap="2" count="1"/>
+      <line num="129" type="stmt" count="1"/>
+      <line num="130" type="stmt" count="1"/>
+      <line num="131" type="stmt" count="1"/>
+      <line num="133" type="stmt" count="1"/>
+      <line num="135" type="stmt" count="1"/>
+      <line num="136" type="stmt" count="1"/>
+      <line num="139" type="stmt" count="1"/>
+      <line num="141" type="stmt" count="1"/>
+      <metrics loc="143" ncloc="104" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="32" coveredstatements="32" elements="41" coveredelements="41"/>
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/PasswordHash.php">
       <class name="ShooglyPeg\Domain\PasswordHash" namespace="global">
@@ -199,16 +199,16 @@
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/StringValue.php">
       <class name="ShooglyPeg\Domain\StringValue" namespace="global">
-        <metrics complexity="3" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="2" elements="7" coveredelements="4"/>
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
       </class>
-      <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="21" type="stmt" count="0"/>
-      <line num="22" type="stmt" count="0"/>
-      <line num="27" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="2"/>
-      <line num="29" type="stmt" count="2"/>
+      <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="21" type="stmt" count="2"/>
+      <line num="22" type="stmt" count="2"/>
+      <line num="27" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="3"/>
+      <line num="29" type="stmt" count="3"/>
       <line num="35" type="method" name="jsonSerialize" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="37" type="stmt" count="1"/>
-      <metrics loc="39" ncloc="27" classes="1" methods="3" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="2" elements="7" coveredelements="4"/>
+      <metrics loc="39" ncloc="27" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/TypedCollection.php">
       <class name="ShooglyPeg\Domain\TypedCollection" namespace="global">
@@ -240,6 +240,6 @@
       <line num="107" type="stmt" count="0"/>
       <metrics loc="109" ncloc="72" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="24" coveredelements="0"/>
     </file>
-    <metrics files="15" loc="690" ncloc="499" classes="14" methods="49" coveredmethods="19" conditionals="0" coveredconditionals="0" statements="100" coveredstatements="37" elements="149" coveredelements="56"/>
+    <metrics files="15" loc="690" ncloc="499" classes="14" methods="49" coveredmethods="30" conditionals="0" coveredconditionals="0" statements="100" coveredstatements="73" elements="149" coveredelements="103"/>
   </project>
 </coverage>
