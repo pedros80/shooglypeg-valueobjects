@@ -4,42 +4,21 @@ declare(strict_types=1);
 
 namespace ShooglyPeg\Domain;
 
-use JsonSerializable;
 use ShooglyPeg\Domain\Exceptions\InvalidEmail;
+use ShooglyPeg\Domain\StringValue;
 
-abstract class Email implements JsonSerializable
+abstract class Email extends StringValue
 {
     /**
-     * @var string
-     */
-    private string $address;
-
-    /**
-     * @param string $address
+     * @param string $value
      * @throws InvalidEmail
      */
-    public function __construct(string $address)
+    public function __construct(string $value)
     {
-        if (!filter_var($address, FILTER_VALIDATE_EMAIL)) {
-            throw InvalidEmail::fromValue($address);
+        if (!filter_var($value, FILTER_VALIDATE_EMAIL)) {
+            throw InvalidEmail::fromValue($value);
         }
 
-        $this->address = $address;
-    }
-
-    /**
-     * @return string
-     */
-    public function __toString(): string
-    {
-        return $this->address;
-    }
-
-    /**
-     * @return string
-     */
-    public function jsonSerialize(): string
-    {
-        return (string) $this;
+        $this->value = $value;
     }
 }
