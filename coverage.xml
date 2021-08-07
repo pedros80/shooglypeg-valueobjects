@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1628351525">
-  <project timestamp="1628351525">
+<coverage generated="1628355151">
+  <project timestamp="1628355151">
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/Currency.php">
       <class name="ShooglyPeg\Domain\Currency" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
@@ -134,15 +134,15 @@
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/Name.php">
       <class name="ShooglyPeg\Domain\Name" namespace="global">
-        <metrics complexity="3" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+        <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="6" coveredelements="6"/>
       </class>
-      <line num="15" type="method" name="equals" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="17" type="stmt" count="0"/>
-      <line num="23" type="method" name="slug" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="25" type="stmt" count="0"/>
-      <line num="32" type="method" name="fromSlug" visibility="public" complexity="1" crap="2" count="0"/>
-      <line num="34" type="stmt" count="0"/>
-      <metrics loc="36" ncloc="25" classes="1" methods="3" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="0" elements="6" coveredelements="0"/>
+      <line num="15" type="method" name="equals" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="17" type="stmt" count="1"/>
+      <line num="23" type="method" name="slug" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="25" type="stmt" count="1"/>
+      <line num="32" type="method" name="fromSlug" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="34" type="stmt" count="1"/>
+      <metrics loc="36" ncloc="25" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="3" coveredstatements="3" elements="6" coveredelements="6"/>
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/Password.php">
       <class name="ShooglyPeg\Domain\Password" namespace="global">
@@ -201,11 +201,11 @@
       <class name="ShooglyPeg\Domain\StringValue" namespace="global">
         <metrics complexity="3" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
       </class>
-      <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="2"/>
-      <line num="21" type="stmt" count="2"/>
-      <line num="22" type="stmt" count="2"/>
-      <line num="27" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="3"/>
-      <line num="29" type="stmt" count="3"/>
+      <line num="19" type="method" name="__construct" visibility="public" complexity="1" crap="1" count="4"/>
+      <line num="21" type="stmt" count="4"/>
+      <line num="22" type="stmt" count="4"/>
+      <line num="27" type="method" name="__toString" visibility="public" complexity="1" crap="1" count="5"/>
+      <line num="29" type="stmt" count="5"/>
       <line num="35" type="method" name="jsonSerialize" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="37" type="stmt" count="1"/>
       <metrics loc="39" ncloc="27" classes="1" methods="3" coveredmethods="3" conditionals="0" coveredconditionals="0" statements="4" coveredstatements="4" elements="7" coveredelements="7"/>
@@ -240,6 +240,6 @@
       <line num="107" type="stmt" count="0"/>
       <metrics loc="109" ncloc="72" classes="1" methods="9" coveredmethods="0" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="0" elements="24" coveredelements="0"/>
     </file>
-    <metrics files="15" loc="690" ncloc="499" classes="14" methods="49" coveredmethods="30" conditionals="0" coveredconditionals="0" statements="100" coveredstatements="73" elements="149" coveredelements="103"/>
+    <metrics files="15" loc="690" ncloc="499" classes="14" methods="49" coveredmethods="33" conditionals="0" coveredconditionals="0" statements="100" coveredstatements="76" elements="149" coveredelements="109"/>
   </project>
 </coverage>
