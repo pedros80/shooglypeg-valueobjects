@@ -24,6 +24,7 @@ final class LatLngTest extends TestCase
             'lat' => '56.001',
             'lng' => '3.0000001'
         ], $location->toArray());
+        $this->assertEquals('"56.001, 3.0000001"', json_encode($location));
     }
 
     /**

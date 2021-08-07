@@ -31,6 +31,29 @@ final class TypedCollectionTest extends TestCase
             new TestName('test name 2'),
             $collection->find(fn (TestName $name) => (string) $name === 'test name 2')
         );
+
+        $this->assertEquals(
+            json_encode(array_map(fn (int $i) => new TestName("test name {$i}"), [1, 2, 3, 4])),
+            json_encode($collection)
+        );
+    }
+
+    /**
+     * @return void
+     */
+    public function testCanIterateOverCollection(): void
+    {
+        $collection = new TestNames(array_map(fn (int $i) => new TestName("test name {$i}"), [1, 2, 3, 4]));
+        $count = 0;
+        $last = null;
+
+        foreach ($collection as $name) {
+            ++$count;
+            $last = $name;
+        }
+
+        $this->assertEquals(4, $count);
+        $this->assertEquals(new TestName('test name 4'), $last);
     }
 
     /**
