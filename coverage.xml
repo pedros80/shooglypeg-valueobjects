@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1628350811">
-  <project timestamp="1628350811">
+<coverage generated="1628351525">
+  <project timestamp="1628351525">
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Domain/Currency.php">
       <class name="ShooglyPeg\Domain\Currency" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
