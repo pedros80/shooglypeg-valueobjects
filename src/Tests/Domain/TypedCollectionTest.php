@@ -28,6 +28,17 @@ final class TypedCollectionTest extends TestCase
         );
 
         $this->assertEquals(
+            ['test--name--1', 'test--name--2', 'test--name--3'],
+            $collection->reduce(function (?array $out, TestName $name) {
+                if (!str_contains((string) $name, '4')) {
+                    $out[] = $name->slug();
+                }
+
+                return $out;
+            })
+        );
+
+        $this->assertEquals(
             new TestName('test name 2'),
             $collection->find(fn (TestName $name) => (string) $name === 'test name 2')
         );
