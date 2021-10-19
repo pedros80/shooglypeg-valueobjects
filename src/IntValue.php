@@ -2,23 +2,18 @@
 
 declare(strict_types=1);
 
-namespace ShooglyPeg\Domain;
+namespace ShooglyPeg;
 
 use JsonSerializable;
 
 abstract class IntValue implements JsonSerializable
 {
     /**
-     * @var int
-     */
-    protected int $value;
-
-    /**
      * @param int $value
      */
-    public function __construct(int $value)
-    {
-        $this->value = $value;
+    public function __construct(
+        protected int $value
+    ) {
     }
 
     /**

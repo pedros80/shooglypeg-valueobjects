@@ -2,22 +2,17 @@
 
 declare(strict_types=1);
 
-namespace ShooglyPeg\Domain;
+namespace ShooglyPeg;
 
 use ArrayIterator;
 use Closure;
 use Countable;
 use IteratorAggregate;
 use JsonSerializable;
-use ShooglyPeg\Domain\Exceptions\InvalidTypeForCollection;
+use ShooglyPeg\Exceptions\InvalidTypeForCollection;
 
 abstract class TypedCollection implements Countable, IteratorAggregate, JsonSerializable
 {
-    /**
-     * @var array
-     */
-    protected array $items;
-
     /**
      * @var string
      */
@@ -26,15 +21,14 @@ abstract class TypedCollection implements Countable, IteratorAggregate, JsonSeri
     /**
      * @param array $items
      */
-    public function __construct(array $items = [])
-    {
+    public function __construct(
+        protected array $items = []
+    ) {
         foreach ($items as $item) {
             if (!is_a($item, $this->type)) {
                 throw InvalidTypeForCollection::fromClass($this->type);
             }
         }
-
-        $this->items = $items;
     }
 
     /**

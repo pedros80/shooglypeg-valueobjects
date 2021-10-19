@@ -1,10 +1,10 @@
 <?php
 
-namespace ShooglyPeg\Tests\Domain;
+namespace ShooglyPeg\Tests;
 
 use PHPUnit\Framework\TestCase;
-use ShooglyPeg\Domain\Exceptions\InvalidTypeForCollection;
-use ShooglyPeg\Domain\TypedCollection;
+use ShooglyPeg\Exceptions\InvalidTypeForCollection;
+use ShooglyPeg\TypedCollection;
 
 final class TypedCollectionTest extends TestCase
 {
@@ -73,7 +73,7 @@ final class TypedCollectionTest extends TestCase
     public function testExceptionInvalidType(): void
     {
         $this->expectException(InvalidTypeForCollection::class);
-        $this->expectExceptionMessage('Object should be ShooglyPeg\Tests\Domain\TestName.');
+        $this->expectExceptionMessage('Object should be ShooglyPeg\Tests\TestName.');
 
         new TestNames([1, 2, 3]);
     }

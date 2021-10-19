@@ -1,9 +1,9 @@
 <?php
 
-namespace ShooglyPeg\Tests\Domain;
+namespace ShooglyPeg\Tests;
 
-use ShooglyPeg\Domain\TypedCollection;
-use ShooglyPeg\Tests\Domain\TestName;
+use ShooglyPeg\TypedCollection;
+use ShooglyPeg\Tests\TestName;
 
 final class TestNames extends TypedCollection
 {

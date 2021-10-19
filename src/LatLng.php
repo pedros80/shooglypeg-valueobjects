@@ -2,31 +2,23 @@
 
 declare(strict_types=1);
 
-namespace ShooglyPeg\Domain;
+namespace ShooglyPeg;
 
 use JsonSerializable;
-use ShooglyPeg\Domain\Exceptions\InvalidLatitude;
-use ShooglyPeg\Domain\Exceptions\InvalidLongitude;
+use ShooglyPeg\Exceptions\InvalidLatitude;
+use ShooglyPeg\Exceptions\InvalidLongitude;
 
 final class LatLng implements JsonSerializable
 {
-    /**
-     * @var float
-     */
-    private float $lat;
-
-    /**
-     * @var float
-     */
-    private float $lng;
-
     /**
      * @param float $lat
      * @param float $lng
      * @throws InvalidLatitude
      * @throws InvalidLongitude
      */
-    public function __construct(float $lat, float $lng)
+    public function __construct(
+        private float $lat,
+        private float $lng)
     {
         if ($lat < -90 || $lat > 90) {
             throw InvalidLatitude::fromValue($lat);
@@ -35,9 +27,6 @@ final class LatLng implements JsonSerializable
         if ($lng < -180 || $lng > 180) {
             throw InvalidLongitude::fromValue($lng);
         }
-
-        $this->lat = $lat;
-        $this->lng = $lng;
     }
 
     /**

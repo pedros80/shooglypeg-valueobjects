@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ShooglyPeg\Domain;
+namespace ShooglyPeg;
 
-use ShooglyPeg\Domain\Exceptions\InvalidCurrency;
+use ShooglyPeg\Exceptions\InvalidCurrency;
 
 final class Currency extends StringValue
 {
@@ -15,13 +15,12 @@ final class Currency extends StringValue
     /**
      * @param string $value
      */
-    public function __construct(string $value)
-    {
+    public function __construct(
+        protected string $value
+    ) {
         if (!in_array($value, array_keys(self::VALID))) {
             throw InvalidCurrency::fromString($value);
         }
-
-        $this->value = $value;
     }
 
     /**

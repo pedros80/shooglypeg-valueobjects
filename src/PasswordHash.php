@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace ShooglyPeg\Domain;
+namespace ShooglyPeg;
 
-use ShooglyPeg\Domain\StringValue;
+use ShooglyPeg\StringValue;
 
 final class PasswordHash extends StringValue
 {

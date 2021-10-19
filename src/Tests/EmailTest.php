@@ -1,10 +1,10 @@
 <?php
 
-namespace ShooglyPeg\Tests\Domain;
+namespace ShooglyPeg\Tests;
 
 use PHPUnit\Framework\TestCase;
-use ShooglyPeg\Domain\Email;
-use ShooglyPeg\Domain\Exceptions\InvalidEmail;
+use ShooglyPeg\Email;
+use ShooglyPeg\Exceptions\InvalidEmail;
 
 final class EmailTest extends TestCase
 {

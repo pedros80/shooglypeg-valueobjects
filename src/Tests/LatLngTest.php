@@ -1,11 +1,11 @@
 <?php
 
-namespace ShooglyPeg\Tests\Domain;
+namespace ShooglyPeg\Tests;
 
 use PHPUnit\Framework\TestCase;
-use ShooglyPeg\Domain\Exceptions\InvalidLatitude;
-use ShooglyPeg\Domain\Exceptions\InvalidLongitude;
-use ShooglyPeg\Domain\LatLng;
+use ShooglyPeg\Exceptions\InvalidLatitude;
+use ShooglyPeg\Exceptions\InvalidLongitude;
+use ShooglyPeg\LatLng;
 
 final class LatLngTest extends TestCase
 {

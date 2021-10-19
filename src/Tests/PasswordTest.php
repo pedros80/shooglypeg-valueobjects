@@ -1,12 +1,12 @@
 <?php
 
-namespace ShooglyPeg\Tests\Domain;
+namespace ShooglyPeg\Tests;
 
 use PHPUnit\Framework\TestCase;
-use ShooglyPeg\Domain\Exceptions\InvalidPassword;
-use ShooglyPeg\Domain\Password;
-use ShooglyPeg\Domain\PasswordHash;
-use ShooglyPeg\Tests\Domain\TestPassword;
+use ShooglyPeg\Exceptions\InvalidPassword;
+use ShooglyPeg\Password;
+use ShooglyPeg\PasswordHash;
+use ShooglyPeg\Tests\TestPassword;
 
 /**
  * @group Password

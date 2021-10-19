@@ -1,10 +1,10 @@
 <?php
 
-namespace ShooglyPeg\Tests\Domain;
+namespace ShooglyPeg\Tests;
 
 use PHPUnit\Framework\TestCase;
-use ShooglyPeg\Domain\IntValue;
-use ShooglyPeg\Tests\Domain\TestInt;
+use ShooglyPeg\IntValue;
+use ShooglyPeg\Tests\TestInt;
 
 final class IntValueTest extends TestCase
 {

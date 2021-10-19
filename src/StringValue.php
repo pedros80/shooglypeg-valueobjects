@@ -2,23 +2,18 @@
 
 declare(strict_types=1);
 
-namespace ShooglyPeg\Domain;
+namespace ShooglyPeg;
 
 use JsonSerializable;
 
 abstract class StringValue implements JsonSerializable
 {
     /**
-     * @var string
-     */
-    protected string $value;
-
-    /**
      * @param string $value
      */
-    public function __construct(string $value)
-    {
-        $this->value = $value;
+    public function __construct(
+        protected string $value
+    ) {
     }
 
     /**

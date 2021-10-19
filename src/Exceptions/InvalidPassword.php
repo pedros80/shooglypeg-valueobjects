@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace ShooglyPeg\Domain\Exceptions;
+namespace ShooglyPeg\Exceptions;
 
 use Exception;
 

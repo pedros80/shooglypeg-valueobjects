@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace ShooglyPeg\Domain;
+namespace ShooglyPeg;
 
-use ShooglyPeg\Domain\Exceptions\InvalidPassword;
-use ShooglyPeg\Domain\PasswordHash;
+use ShooglyPeg\Exceptions\InvalidPassword;
+use ShooglyPeg\PasswordHash;
 
 abstract class Password
 {
@@ -22,22 +22,13 @@ abstract class Password
     ];
 
     /**
-     * @var string
-     */
-    private string $content;
-
-    /**
-     * @var array
-     */
-    private array $errors;
-
-    /**
      * @param string $content
      * @throws InvalidPassword
      */
-    public function __construct(string $content)
-    {
-        $this->errors = [];
+    public function __construct(
+        private string $content,
+        private array $errors = []
+    ) {
 
         $this->checkLength($content);
         $this->checkUpperCase($content);
@@ -47,8 +38,6 @@ abstract class Password
         if ($this->errors) {
             throw new InvalidPassword(implode(', ', $this->errors));
         }
-
-        $this->content = $content;
     }
 
     /**

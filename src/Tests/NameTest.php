@@ -1,9 +1,9 @@
 <?php
 
-namespace ShooglyPeg\Tests\Domain;
+namespace ShooglyPeg\Tests;
 
 use PHPUnit\Framework\TestCase;
-use ShooglyPeg\Domain\Name;
+use ShooglyPeg\Name;
 
 final class NameTest extends TestCase
 {

@@ -1,10 +1,10 @@
 <?php
 
-namespace ShooglyPeg\Tests\Domain;
+namespace ShooglyPeg\Tests;
 
 use PHPUnit\Framework\TestCase;
-use ShooglyPeg\Domain\Currency;
-use ShooglyPeg\Domain\Exceptions\InvalidCurrency;
+use ShooglyPeg\Currency;
+use ShooglyPeg\Exceptions\InvalidCurrency;
 
 final class CurrencyTest extends TestCase
 {
