@@ -12,10 +12,9 @@ abstract class Uuid extends Id
     /**
      * @param string $value
      */
-    public function __construct(string $value)
-    {
+    public function __construct(
+        protected string $value
+    ) {
         Assertion::uuid($value);
-
-        $this->value = $value;
     }
 }
