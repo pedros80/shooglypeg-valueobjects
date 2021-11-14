@@ -94,10 +94,11 @@ abstract class TypedCollection implements Countable, IteratorAggregate, JsonSeri
 
     /**
      * @param Closure $fn
+     * @param array $initial
      * @return array
      */
-    public function reduce(Closure $fn): array
+    public function reduce(Closure $fn, array $initial = []): array
     {
-        return array_reduce($this->items, $fn);
+        return array_reduce($this->items, $fn, $initial);
     }
 }
