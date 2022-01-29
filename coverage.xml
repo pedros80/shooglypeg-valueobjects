@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1636884528">
-  <project timestamp="1636884528">
+<coverage generated="1643486958">
+  <project timestamp="1643486958">
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Currency.php">
       <class name="ShooglyPeg\Currency" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
@@ -243,7 +243,7 @@
     </file>
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/TypedCollection.php">
       <class name="ShooglyPeg\TypedCollection" namespace="global">
-        <metrics complexity="11" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="24" coveredelements="24"/>
+        <metrics complexity="12" methods="10" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="26" coveredelements="26"/>
       </class>
       <line num="24" type="method" name="__construct" visibility="public" complexity="3" crap="3" count="3"/>
       <line num="27" type="stmt" count="3"/>
@@ -252,8 +252,8 @@
       <line num="32" type="stmt" count="2"/>
       <line num="37" type="method" name="jsonSerialize" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="39" type="stmt" count="1"/>
-      <line num="45" type="method" name="getIterator" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="47" type="stmt" count="1"/>
+      <line num="45" type="method" name="getIterator" visibility="public" complexity="1" crap="1" count="2"/>
+      <line num="47" type="stmt" count="2"/>
       <line num="53" type="method" name="count" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="55" type="stmt" count="1"/>
       <line num="61" type="method" name="items" visibility="protected" complexity="1" crap="1" count="2"/>
@@ -268,8 +268,10 @@
       <line num="92" type="stmt" count="1"/>
       <line num="100" type="method" name="reduce" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="102" type="stmt" count="1"/>
-      <metrics loc="104" ncloc="69" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="24" coveredelements="24"/>
+      <line num="108" type="method" name="toArray" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="110" type="stmt" count="1"/>
+      <metrics loc="112" ncloc="74" classes="1" methods="10" coveredmethods="10" conditionals="0" coveredconditionals="0" statements="16" coveredstatements="16" elements="26" coveredelements="26"/>
     </file>
-    <metrics files="18" loc="766" ncloc="563" classes="17" methods="58" coveredmethods="58" conditionals="0" coveredconditionals="0" statements="111" coveredstatements="111" elements="169" coveredelements="169"/>
+    <metrics files="18" loc="774" ncloc="568" classes="17" methods="59" coveredmethods="59" conditionals="0" coveredconditionals="0" statements="112" coveredstatements="112" elements="171" coveredelements="171"/>
   </project>
 </coverage>
