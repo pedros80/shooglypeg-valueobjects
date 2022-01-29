@@ -4,6 +4,7 @@ namespace ShooglyPeg\Tests;
 
 use PHPUnit\Framework\TestCase;
 use ShooglyPeg\Exceptions\InvalidTypeForCollection;
+use ShooglyPeg\Tests\TestNames;
 use ShooglyPeg\TypedCollection;
 
 final class TypedCollectionTest extends TestCase
@@ -46,6 +47,11 @@ final class TypedCollectionTest extends TestCase
         $this->assertEquals(
             json_encode(array_map(fn (int $i) => new TestName("test name {$i}"), [1, 2, 3, 4])),
             json_encode($collection)
+        );
+
+        $this->assertEquals(
+            array_map(fn (int $i) => new TestName("test name {$i}"), [1, 2, 3, 4]),
+            $collection->toArray()
         );
     }
 
