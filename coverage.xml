@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<coverage generated="1634682304">
-  <project timestamp="1634682304">
+<coverage generated="1636884528">
+  <project timestamp="1636884528">
     <file name="/home/runner/work/shooglypeg-valueobjects/shooglypeg-valueobjects/src/Currency.php">
       <class name="ShooglyPeg\Currency" namespace="global">
         <metrics complexity="3" methods="2" coveredmethods="2" conditionals="0" coveredconditionals="0" statements="5" coveredstatements="5" elements="7" coveredelements="7"/>
@@ -266,10 +266,10 @@
       <line num="83" type="stmt" count="1"/>
       <line num="90" type="method" name="find" visibility="public" complexity="1" crap="1" count="1"/>
       <line num="92" type="stmt" count="1"/>
-      <line num="99" type="method" name="reduce" visibility="public" complexity="1" crap="1" count="1"/>
-      <line num="101" type="stmt" count="1"/>
-      <metrics loc="103" ncloc="69" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="24" coveredelements="24"/>
+      <line num="100" type="method" name="reduce" visibility="public" complexity="1" crap="1" count="1"/>
+      <line num="102" type="stmt" count="1"/>
+      <metrics loc="104" ncloc="69" classes="1" methods="9" coveredmethods="9" conditionals="0" coveredconditionals="0" statements="15" coveredstatements="15" elements="24" coveredelements="24"/>
     </file>
-    <metrics files="18" loc="765" ncloc="563" classes="17" methods="58" coveredmethods="58" conditionals="0" coveredconditionals="0" statements="111" coveredstatements="111" elements="169" coveredelements="169"/>
+    <metrics files="18" loc="766" ncloc="563" classes="17" methods="58" coveredmethods="58" conditionals="0" coveredconditionals="0" statements="111" coveredstatements="111" elements="169" coveredelements="169"/>
   </project>
 </coverage>
