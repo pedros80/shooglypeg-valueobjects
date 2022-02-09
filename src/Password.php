@@ -115,10 +115,7 @@ abstract class Password
     public static function generate(int $length = 10): static
     {
         // one of each first
-        $out = array_map(function ($chars) {
-            return $chars[rand(0, strlen($chars) - 1)];
-        }, self::POOL);
-
+        $out = array_map(fn (string $chars) => $chars[rand(0, strlen($chars) - 1)], self::POOL);
         $all = implode('', self::POOL);
 
         for ($i = count($out); $i < $length; ++$i) {

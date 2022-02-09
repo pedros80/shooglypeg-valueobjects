@@ -11,15 +11,13 @@ use ShooglyPeg\Exceptions\InvalidLongitude;
 final class LatLng implements JsonSerializable
 {
     /**
-     * @param float $lat
-     * @param float $lng
      * @throws InvalidLatitude
      * @throws InvalidLongitude
      */
     public function __construct(
         private float $lat,
-        private float $lng)
-    {
+        private float $lng
+    ) {
         if ($lat < -90 || $lat > 90) {
             throw InvalidLatitude::fromValue($lat);
         }

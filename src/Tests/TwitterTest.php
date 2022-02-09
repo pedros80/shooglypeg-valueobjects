@@ -13,13 +13,13 @@ final class TwitterTest extends TestCase
 
         $array = [
             'handle' => '@twitter',
-            'url'    => 'http://www.twitter.com/twitter',
-            'link'   => '<a href="http://www.twitter.com/twitter">@twitter</a>',
+            'url'    => 'https://www.twitter.com/twitter',
+            'link'   => '<a href="https://www.twitter.com/twitter">@twitter</a>',
         ];
 
         $this->assertEquals('@twitter', $twitter->handle());
-        $this->assertEquals('http://www.twitter.com/twitter', $twitter->url());
-        $this->assertEquals('<a href="http://www.twitter.com/twitter">@twitter</a>', $twitter->link());
+        $this->assertEquals('https://www.twitter.com/twitter', $twitter->url());
+        $this->assertEquals('<a href="https://www.twitter.com/twitter">@twitter</a>', $twitter->link());
         $this->assertEquals($array, $twitter->toArray());
     }
 }

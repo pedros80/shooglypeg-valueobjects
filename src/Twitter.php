@@ -21,7 +21,7 @@ final class Twitter extends StringValue
      */
     public function url(): string
     {
-        return "http://www.twitter.com/{$this->value}";
+        return "https://www.twitter.com/{$this->value}";
     }
 
     /**
